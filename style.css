@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.voice_to_text{
+    text-align: center;
+    align-items: center;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+#convert_text{
+    max-width: 400px;
+    max-height: 400px;
+}
