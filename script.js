@@ -4,6 +4,7 @@ click_to_convert.addEventListener('click', function(){
     const recognition = new SpeechRecognition();
     recognition.interimResults = true;
 
+
     recognition.addEventListener('result', e=>{
         const transcript =Array.from(e.results)
         .map(result => result[0])
@@ -12,5 +13,14 @@ click_to_convert.addEventListener('click', function(){
     })
     if(speech==true){
         recognition.start();
+
+        // function timeConsumingTask(){
+        //     const recognition = 100000;
+        //     return new Promise(resolve =>{
+        //       setTimeout(()=>{
+        //         resolve();
+        //     }, recognition);
+        //   })
+        //   }
     }
 })
